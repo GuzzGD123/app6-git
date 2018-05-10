@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Batalla de Puebla</title>
+
+<link rel="icon" href="res/android/ico.ico">
+<!--gripo CSS-->
+<link rel="stylesheet" href="css/tema6.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<style type="text/css">
+#Pagina1 div div p {
+	text-align: left;
+}
+#Pagina2 div div p {
+	text-align: left;
+}
+#Pagina3 div div p {
+	text-align: left;
+}
+</style>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!--   <script src="js/acciones.js"></script> -->
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine6/style.css" />
+<script type="text/javascript" src="engine6/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/recursos/5demayo2.jpg','imagenes/recursos/historia2.jpg')">
+
+
+<div data-role="page" id="Principal" data-theme="a">
+
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Batalla de Puebla</h1>
+</div>
+<div data-role="main" class="ui-content">
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container6">
+<div class="ws_images"><ul>
+		<li><img src="data6/images/5demayo.jpg" alt="5deMayo" title="5deMayo" id="wows6_0"/></li>
+		<li><img src="data6/images/batalla_de_puebla.jpg" alt="Batalla de Puebla" title="Batalla de Puebla" id="wows6_1"/></li>
+		<li><img src="data6/images/batalla_de_puebla2.jpg" alt="Batalla de Puebla2" title="Batalla de Puebla2" id="wows6_2"/></li>
+		<li><img src="data6/images/batalla_de_puebla3.jpg" alt="Batalla de Puebla3" title="Batalla de Puebla3" id="wows6_3"/></li>
+		<li><img src="data6/images/batalla_de_puebla4.jpg" alt="Batalla de Puebla4" title="Batalla de Puebla4" id="wows6_4"/></li>
+		<li><img src="data6/images/batalla_de_puebla5.jpg" alt="Batalla de Puebla5" title="Batalla de Puebla5" id="wows6_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data6/images/batalla_de_puebla6.jpg" alt="html5 slider" title="Batalla de Puebla6" id="wows6_6"/></a></li>
+		<li><img src="data6/images/desfile.jpg" alt="Desfile" title="Desfile" id="wows6_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="5deMayo"><span><img src="data6/tooltips/5demayo.jpg" alt="5deMayo"/>1</span></a>
+		<a href="#" title="Batalla de Puebla"><span><img src="data6/tooltips/batalla_de_puebla.jpg" alt="Batalla de Puebla"/>2</span></a>
+		<a href="#" title="Batalla de Puebla2"><span><img src="data6/tooltips/batalla_de_puebla2.jpg" alt="Batalla de Puebla2"/>3</span></a>
+		<a href="#" title="Batalla de Puebla3"><span><img src="data6/tooltips/batalla_de_puebla3.jpg" alt="Batalla de Puebla3"/>4</span></a>
+		<a href="#" title="Batalla de Puebla4"><span><img src="data6/tooltips/batalla_de_puebla4.jpg" alt="Batalla de Puebla4"/>5</span></a>
+		<a href="#" title="Batalla de Puebla5"><span><img src="data6/tooltips/batalla_de_puebla5.jpg" alt="Batalla de Puebla5"/>6</span></a>
+		<a href="#" title="Batalla de Puebla6"><span><img src="data6/tooltips/batalla_de_puebla6.jpg" alt="Batalla de Puebla6"/>7</span></a>
+		<a href="#" title="Desfile"><span><img src="data6/tooltips/desfile.jpg" alt="Desfile"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">javascript image slider</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine6/wowslider.js"></script>
+<script type="text/javascript" src="engine6/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Batalla del 5 de mayo</h1>
+    <div>
+      <p>Imagen sobre la batalla del 5 de mayo:</p>
+      </p>
+      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image38','','imagenes/recursos/5demayo2.jpg',1)"><img src="imagenes/recursos/5demayo.jpg" width="50%" height="50%" id="Image38"></a></p>
+      <p>Si quieres saber más sobre la imagen da click <a href="https://www.poblanerias.com/2017/05/5-de-mayo-puebla-consternada-triste-y-silenciosa/" target="_self">Aquí.</a><br>
+      </p>
+    </div>
+    <div></div>
+  </div>
+  
+  <p>&nbsp;</p>
+  
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Desfile del 5 de Mayo</h1>
+    <div>
+      <p>Celebración:</p>
+      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('lol','','imagenes/recursos/dia2.jpg',1)"><img src="imagenes/recursos/dia.jpg" width="50%" height="50%" id="lol"></a></p>
+      <p>Si quieres saber más sobre el desile da click <a href="http://sinapsismx.com/puebla-conmemora-5-mayo-desfile/" target="_self">Aquí.</a><br>
+      </p>
+    </div>
+    <div></div>
+</div>
+</div>
+
+
+
+
+
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Batalla del 4 de mayo</h2>
+<p>Muestra sobre la batalla del 4 de Mayo en Atlixco</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Batalla del 5 de mayo</h2>
+<P>Muestra sobre la batalla del 5 de Mayo</P>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Inicio de la batalla de Puebla</h2>
+<p>Muestra el inicio de la batalla</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Museo sobre la batalla de Puebla</h2>
+<p>Muestra la página del museo interactivo de la batalla del 5 de mayo</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Participantes de la batalla de Pueblla</h2>
+<p>Muestra fotografia de cada participante de la batalla de Puebla</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-position="fixed">
+<div>
+<img src="imagenes/Icono.png" width="46" height="46">
+</div>
+<div>
+<h4>Aplicación Seis</h4>
+<h4>Gustavo Jesús Calderón Ximil</h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Historia</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>Atlixco tiene una larga historia de contribuciones a la construcción de éste país  y este Estado de Puebla.</p>
+  <p>Desde la etapa de colonización hispana, fue un lugar privilegiado y codiciado.  Sus condiciones de fertilidad, abundancia de agua y mano de obra, propiciaron una gran riqueza agrícola basada en el cultivo del trigo, por lo que fue considerada como &ldquo;el primer granero de la Nueva España&rdquo;.  Su importancia económica ha sido plasmada en diversos testimonios de aquella época recogidos en el libro &ldquo;Antigua Villa de Carrión&rdquo;, de la autoría de Marco Díaz.</p>
+  <p>Su participación en la causa de la Independencia, -donde destacan José Luis Rodríguez de Alconedo y Francisco Pablo Vázquez-  le otorgaron, de parte del General Nicolás Bravo en 1843 la denominación de &ldquo;Noble y Leal Ciudad de Atlixco&rdquo;.</p>
+  <p>El esfuerzo de construcción de nuestro país, pasa por una serie de invasiones. Por ello habrá que recordar también, la defensa que hizo Atlixco en contra de los españoles que intentaban reconquistar a México en 1825; y la intervención que tuvo en 1914 durante la invasión estadounidense en el gobierno de Victoriano Huerta.</p>
+  <p>La llegada de la industria textil en Atlixco implicó para la región un cambio favorecedor en el estilo de vida; sin embargo, ésta época de desarrollo textil en el valle de Atlixco coincide con el movimiento revolucionario. La influencia del movimiento de Emiliano Zapata en pro de de la tierra, sumó a un gran número de trabajadores inconformes y  líderes de esta lucha revolucionaria de la región como Fortino Ayaquica y Domingo y Cirilo Arenas, que trataron de hacer insurrección en las fábricas textiles, hechos violentos que sucedieron entre 1911 y 1917 en la fábrica textil de Metepec. Incluso, el historiador Jeffrey Bortz, sostiene que los trabajadores de la industria textil del corredor fabril México, Tlaxcala y Atlixco, Puebla, aportaron las principales reivindicaciones laborales que quedaron plasmadas en la Constitución de 1917.</p>
+  <p>Una distinción que enorgullece a los atliscenses  fue la Declaratoria mediante la cual Atlixco fue nombrada por Decreto del Congreso del Estado en el año de 1998 &ldquo;Heroica Ciudad de Atlixco&rdquo; por la defensa que dieron en contra del ejército norteamericano en 1848, y el reconocimiento al batallón &ldquo;Libres de Atlixco&rdquo; comandado por el general Joaquín Rea, que enfrentaron en un ataque desigual, contra de una población indefensa demostrando el gran valor de los atliscenses.</p>
+  <p>Nuevamente,  un 4 de mayo de 1862, Atlixco, enfrenta una batalla en contra de conservadores que pretendían sumarse al Ejército Francés. Hecho decisivo en la epopeya del 5 de Mayo, que hoy es parte de la historia nacional.</p>
+  <p>El propio Benito Juárez creó una medalla reconociendo esta aportación de los atliscenses  que señalaba: &ldquo;Derrotando a los traidores el 4 de mayo, contribuyó eficazmente al triunfo alcanzado en Puebla en contra del Ejército Francés el 5 de mayo de 1862&rdquo;</p>
+  <p>El propio gobierno de Benito Juárez consideró que sin el triunfo del 4 de mayo en Atlixco, no hubiera sido posible la victoria del 5 de mayo en Puebla.</p>
+  <p>Justamente ello fue el sustento para que en el año 2010: Del Bicentenario y Centenario de nuestros movimientos fundacionales, por unanimidad de votos, el Congreso del Estado aprobara el Decreto en el que se declara &ldquo;Dos Veces Heroica la Ciudad de Atlixco&rdquo;  </p>
+  <p>La aportación de Atlixco y la región al movimiento de Independencia está plasmada en la obra de la historiadora Alicia Tecuanhuey, &ldquo;La formación del consenso por la Independencia. Lógica de la Ruptura del Juramento. Puebla, 1810-1821&rdquo;</p>
+  <p>Por ello importante hacer una recordación de estos hechos, en el contexto de los eventos conmemorativos al 4 y al 5 de Mayo celebrados en Atlixco y en la ciudad de Puebla, éstos últimos con la presencia del Presidente de México Enrique Peña Nieto. Primero, porque para Atlixco es un gran orgullo y también, porque representa sin duda, la aportación histórica, cultural y social que Atlixco ha dado a Puebla y al país y que servirá a las y los jóvenes de hoy, y a las futuras generaciones,  para rescatar su interés por la historia y fundamentalmente el sentido de identidad y pertenencia a esta noble tierra: Atlixco.</p>
+  
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/Icono.png" width="46" height="46">
+</div>
+<h4>Aplicación Seis, GJCX</h4>
+</div>
+</div>
+
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Historia</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>Antes del <strong>5 de Mayo</strong>, el día  28 de abril de 1862 tuvo lugar un enfrentamiento conocido como la Batalla de las Cumbres entre el Ejército Expedicionario Francés y el Ejército Mexicano. En este conflicto hubieron cerca de 500 bajas francesas en contra de apenas 50 bajas mexicanas. Pese a esto, el Ejército Expedicionario francés consigue hacerse con el control del Paso de Acultzingo.</p>
+  <p>Después de la Batalla de las Cumbres el conde de Lorencez conservaba su confianza y mandó a decir a Napoleon III que: &ldquo;Somos tan superiores a los mexicanos en organización, disciplina, raza, moral y refinamiento de sensibilidades, que le ruego anunciarle a Su Majestad Imperial, Napoleón III, que a partir de este momento y al mando de nuestros 6,000 valientes soldados, ya soy dueño de México&rdquo;</p>
+  <p>El 2 de mayo parte el Ejército Expedicionario Francés desde San Agustín del Palmar en Veracruz con rumbo para cruzar la Sierra Madre Oriental y dirigirse <strong>hacia Puebla</strong> ya que era paso obligado para llegar a la capital del país.</p>
+  <p>Cabe señalar que el Partido Conservador apoyaba la Invasión francesa e incluso formaron parte de la guerrilla que atacó en varias ocasiones al <strong>Ejército de Oriente</strong>.</p>
+  <p>Otros generales mexicanos también participaron en la defensa de Puebla como es el caso de  las tropas de Oaxaca dirigidas por <strong>Porfirio Díaz</strong>. El centro de la línea lo defendió <strong>Francisco Lamadrid</strong> con las tropas del Estado de México y San Luis Potosí. La izquierda se apoyó en el cerro de Acueyametepec ubicado en el norte de la ciudad y en cuya cumbre se ubicaban los <strong>Fuertes de Loreto y Guadalupe</strong>, con el general <strong>Miguel Negrete</strong> a la cabeza de la <strong>Segunda División de Infantería</strong>.</p>
+  <p>El 5 de mayo a las 9:15am aparecen los franceses en el horizonte pero no es sino hasta las 11:15am cuando comienzan las hostilidades anunciándose con un cañonazo desde el <strong>Fuerte de Guadalupe</strong> y acompañado por los repiques de las campanas de la ciudad.</p>
+  <p>El conde de Lorencez ordena una maniobra sorpresiva que divide a la columna francesa en dos y que da como resultado a 4,000 hombres marchando para atacar los Fuertes de Loreto y Guadalupe. Esta decisión pudo ser la causa de la derrota francesa ya que los mexicanos contaban con la ventaja en estas posiciones.</p>
+  <p> <strong>El 6o. Batallón de la Guardia Nacional del Estado de Puebla</strong>, bajo el mando del entonces coronel <strong>Juan Nepomuceno Méndez</strong>, fue el <strong>primer cuerpo del Ejército de Oriente en hacer frente a los franceses</strong>, al ubicarse en la línea comprendida entre los fuertes, y rechazar su ataque.</p>
+  <p>Varios embates franceses fueron repelidos por la resistencia del Ejército Mexicano como es el caso de los zuavos, el regimiento de élite de la infantería francesa, quienes iniciaron un sigiloso ascenso hacia el <strong>Fuerte de Guadalupe</strong> pero fueron recibidos con bayonetas y obligados a retroceder.</p>
+  <p>El coronel mexicano <strong>José Rojo</strong> avisó a Antonio Álvarez que era tiempo de que la caballería mexicana entrara en acción para alcanzar una victoria completa. Ordenó a los Carabineros de Pachuca cargar sobre los restos de la columna, disparando sus carabinas y lanzando mandobles de sable sobre los franceses, siendo totalmente rechazados.</p>
+  <p>A las dos y media de la tarde, cuando los mexicanos empezaban a vislumbrar la victoria, Lorencez se dispuso a lanzar el último asalto, dirigiendo a los Cazadores de Vincennes y el Regimiento de Zuavos hacia Guadalupe. Zaragoza dispuso que el <strong>Batallón Reforma</strong> de San Luis Potosí saliera en auxilio de los fuertes.</p>
+  <p>Luego de ser repelidos por última vez, las fuerzas del Ejército Expedicionario Francés comenzaron a huir completamente dispersados. Se replegaron a la hacienda Los Álamos, para finalmente retirarse hacia <strong>Amozoc</strong>.</p>
+  <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/recursos/historia2.jpg',1)"><img src="imagenes/recursos/historia.jpg" width="50%" height="50%" id="Image12"></a></center>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/Icono.png" width="46" height="46">
+</div>
+<h4>Aplicación Seis, GJCX</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Inicio y final de la batalla</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>Antes del 5 de Mayo, el día  28 de abril de 1862, tuvo lugar un enfrentamiento conocido como la Batalla de las Cumbres entre el Ejército Expedicionario Francés y el Ejército Mexicano. En este conflicto hubo cerca de 500 bajas francesas en contra de apenas 50 bajas mexicanas.</p>
+  <p>El 2 de mayo parte el Ejército Expedicionario Francés desde San Agustín del Palmar en Veracruz con rumbo a cruzar la Sierra Madre Oriental y dirigirse hacia Puebla, era paso obligado para llegar a la capital mexicana.</p>
+  <p>Otros generales mexicanos también participaron en la defensa de Puebla como es el caso de  las tropas de Oaxaca dirigidas por Porfirio Díaz. El centro de la línea lo defendió Francisco Lamadrid con las tropas del Estado de México y San Luis Potosí. La izquierda se apoyó en el cerro de Acueyametepec, ubicado en el norte de la ciudad, y en cuya cumbre están los Fuertes de Loreto y Guadalupe, con el general Miguel Negrete a la cabeza de la Segunda División de Infantería.</p>
+  <ul>
+    <li>El 5 de mayo, a las 9 de la manana, aparecen los franceses en el horizonte, pero es hasta las 11 de la manana cuando comienzan las hostilidades, anunciándose con un cañonazo desde el Fuerte de Guadalupe y acompañado por los repiques de las campanas de la ciudad.</li>
+    <li>El conde de Lorencez ordena una maniobra sorpresiva que divide a la columna francesa en dos; eran 4,000 hombres marchando para atacar los Fuertes de Loreto y Guadalupe.</li>
+    <li>El 6o. Batallón de la Guardia Nacional del Estado de Puebla, bajo el mando del coronel Juan Nepomuceno Méndez, fue el primer cuerpo del Ejército de Oriente en hacer frente a los franceses y  rechazar el  ataque.</li>
+    <li>Varios embates franceses fueron repelidos por la resistencia del Ejército Mexicano como es el caso de los zuavos (originarios de Argelia), el regimiento de élite de la infantería francesa, quienes iniciaron un cauteloso ascenso hacia el Fuerte de Guadalupe, pero fueron recibidos con bayonetas y obligados lo franceses a retroceder.</li>
+    <li>A las 2h30 de la tarde, cuando los mexicanos empezaban a vislumbrar la victoria, Lorencez se dispuso a lanzar el último asalto, dirigiendo a los Cazadores de Vincennes y el Regimiento de Zuavos hacia Guadalupe.  Zaragoza dispuso que el Batallón Reforma de San Luis Potosí saliera en auxilio de los fuertes.</li>
+    <li>Luego de ser repelidos por última vez, las fuerzas del Ejército Expedicionario Francés comenzaron a huir completamente dispersados. Se replegaron a la hacienda Los Álamos, para finalmente retirarse hacia Amozoc.</li>
+  </ul>
+  <p>El día <strong>5 de mayo de 1862</strong>, tras una de las más duras batallas de la historia, la cual duró desde el amanecer a la tarde, los franceses terminaron por retirarse. El saldo fue de más de 500 bajas en las líneas francesas contra apenas unas 100 en las mexicanas.</p>
+  <p>Éste hecho se convirtió en un fuerte símbolo de la resistencia y del poder mexicano, representando justamente una victoria simbólica contra los grandes imperios.</p>
+  <h2><img src="imagenes/recursos/inicio.jpg" width="50%" height="50%"></h2>
+
+
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/Icono.png" width="46" height="46">
+</div>
+<h4>Aplicación Seis, GJCX</h4>
+</div>
+</div>
+
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Museo interactivo de la batalla del 5 de mayo</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>Para acceder a la pàgina del museo de click sobre la imagen.</p>
+  <p><a href="http://puebla.travel/es/museos/item/museo-interactivo-de-la-batalla-del-5-de-mayo" target="_self"><img src="imagenes/recursos/museo.jpg" width="50%" height="50%"></a></p>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/Icono.png" width="46" height="46">
+</div>
+<h4>Aplicación Seis, GJCX</h4>
+</div>
+</div>
+
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Participantes de la batalla de Puebla</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  
+  
+  <div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" data-role="button" >
+<h2>Ignacio Zaragoza Seguin</h2>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" data-role="button">
+<h2>Porfirio Díaz</h2>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" data-role="button">
+<h2>Miguel Negrete</h2>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina9" data-role="button">
+<h2>Charles Ferdinand Latrille</h2>
+</a>
+</li>
+
+
+
+
+</ul>
+</div>
+</div>
+  
+
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/Icono.png" width="46" height="46">
+</div>
+<h4>Aplicación Seis, GJCX</h4>
+</div>
+</div></div>
+
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Ignacio Zaragoza Seguina</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+ <center><img src="imagenes/recursos/Ignacio_Zaragoza.png" width="50%" height="50%" alt="Ignacio Zaragoza Seguin"></center>
+<p></p>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/Icono.png" width="46" height="46">
+</div>
+<h4>Aplicación Seis, GJCX</h4>
+</div>
+</div></div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Porfirio Díaz</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+ <center><img src="imagenes/recursos/Porfirio_Diaz.jpg" width="50%" height="50%" alt="Porfirio Díaz"></center>
+<p></p>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/Icono.png" width="46" height="46">
+</div>
+<h4>Aplicación Seis, GJCX</h4>
+</div>
+</div></div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Miguel Negrete</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+ <center><img src="imagenes/recursos/Miguel_Negrete.jpg" width="50%" height="50%" alt="Miguel Negrete"></center>
+<p></p>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/Icono.png" width="46" height="46">
+</div>
+<h4>Aplicación Seis, GJCX</h4>
+</div>
+</div></div>
+
+<div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Charles Ferdinand Latrille</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+ <center><img src="imagenes/recursos/Charles_Ferdinand_Latrille.jpg" width="50%" height="50%" alt="Charles Ferdinand Latrille"></center>
+<p></p>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/Icono.png" width="46" height="46">
+</div>
+<h4>Aplicación Seis, GJCX</h4>
+</div>
+</div></div>
+
+
+
+</body>
+</html>
+
